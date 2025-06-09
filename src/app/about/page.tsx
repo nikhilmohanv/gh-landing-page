@@ -7,40 +7,23 @@ const About = () => {
     { number: '20+', label: 'Years of Experience' },
     { number: '$175M+', label: 'Funds Managed' },
     { number: '70%', label: 'Average Cost Savings' },
-    { number: '$4B', label: 'Client Company Size' }
-  ];
+    { number: '$4B', label: 'Client Company Size' },
 
-  const team = [
-    {
-      name: 'Nash Cisneros',
-      role: 'Founder & CEO',
-      experience: '20+ years',
-      specialties: ['Finance Leadership', 'KPMG & PwC Alumni', 'Offshore Strategy'],
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Sarah Chen',
-      role: 'Head of Talent Acquisition',
-      experience: '15+ years',
-      specialties: ['Global Recruiting', 'Talent Assessment', 'Performance Coaching'],
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Michael Rodriguez',
-      role: 'Director of Accounting Services',
-      experience: '18+ years',
-      specialties: ['Financial Management', 'Tax Strategy', 'Business Growth'],
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
-    {
-      name: 'Priya Sharma',
-      role: 'Operations Manager',
-      experience: '12+ years',
-      specialties: ['Process Optimization', 'Quality Assurance', 'Client Success'],
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
   ];
-
+  // const team=[ {
+  //   name: 'Michael Rodriguez',
+  //   role: 'Director of Accounting Services',
+  //   experience: '18+ years',
+  //   specialties: ['Financial Management', 'Tax Strategy', 'Business Growth'],
+  //   image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400'
+  // },
+  // {
+  //   name: 'Priya Sharma',
+  //   role: 'Operations Manager',
+  //   experience: '12+ years',
+  //   specialties: ['Process Optimization', 'Quality Assurance', 'Client Success'],
+  //   image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400'
+  // }]
   const values = [
     {
       icon: Award,
@@ -97,8 +80,8 @@ const About = () => {
               About Global Hiring
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              We help businesses access top-tier offshore talent and accounting support, 
-              saving up to 70% in staffing costs and 50% in accounting services while 
+              We help businesses access top-tier offshore talent and accounting support,
+              saving up to 70% in staffing costs and 50% in accounting services while
               maintaining Fortune 500-level quality and expertise.
             </p>
           </div>
@@ -122,21 +105,21 @@ const About = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                To democratize access to world-class talent and financial expertise by connecting 
-                businesses with the top 10% of offshore professionals. We believe that geographic 
-                boundaries shouldn't limit access to exceptional talent and services.
+                To democratize access to world-class talent and financial expertise by connecting
+                businesses with the top 10% of offshore professionals. We believe that geographic
+                boundaries shouldn&apos;t limit access to exceptional talent and services.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Through our comprehensive vetting process, ongoing coaching, and full-service 
-                management, we ensure that businesses can scale efficiently while maintaining 
+                Through our comprehensive vetting process, ongoing coaching, and full-service
+                management, we ensure that businesses can scale efficiently while maintaining
                 the highest standards of quality and compliance.
               </p>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
               <p className="text-gray-700 leading-relaxed">
-                To be the global leader in offshore talent and accounting solutions, 
-                enabling businesses of all sizes to compete on a global scale through 
+                To be the global leader in offshore talent and accounting solutions,
+                enabling businesses of all sizes to compete on a global scale through
                 access to exceptional talent and cost-effective financial services.
               </p>
             </div>
@@ -204,13 +187,13 @@ const About = () => {
               Meet Our Leadership Team
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experienced professionals with backgrounds from top-tier firms including KPMG, PwC, 
+              Experienced professionals with backgrounds from top-tier firms including KPMG, PwC,
               and Fortune 500 companies.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
+            {/* {team.map((member, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="aspect-square overflow-hidden">
                   <img 
@@ -232,7 +215,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </section>
@@ -263,89 +246,96 @@ const About = () => {
 
             <div className="bg-white/10 rounded-lg p-6 text-center">
               <p className="text-lg italic">
-                "This success isn't just about savings—it's about unlocking the potential of a global workforce."
+                &quot;This success isn&apos;t just about savings—it&apos;s about unlocking the potential of a global workforce.&quot;
               </p>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Location & Contact Info */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Location</h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-gray-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Head Office</h3>
-                    <p className="text-gray-600">
-                      213 - 2438 Marine Dr.<br />
-                      West Vancouver, BC V7V 1L2<br />
-                      Canada
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <Phone className="h-6 w-6 text-gray-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600">+1 604-674-5992</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <Mail className="h-6 w-6 text-gray-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">nash.cisneros@globalhiring.ai</p>
-                  </div>
-                </div>
+          <div className="bg-white/10 rounded-lg p-6 text-center">
+            <p className="text-lg italic">
+            This success isn&rsquo;t just about savings&mdash;it&rsquo;s about unlocking the potential of a global workforce.
+            </p>
+          </div>
+        </div>
+  
+      </section >
+
+  {/* Location & Contact Info */ }
+  < section className = "py-20 bg-gray-50" >
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid md:grid-cols-2 gap-12">
+        <div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Location</h2>
+          <div className="space-y-6">
+            <div className="flex items-start space-x-4">
+              <MapPin className="h-6 w-6 text-gray-600 mt-1" />
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Head Office</h3>
+                <p className="text-gray-600">
+                  213 - 2438 Marine Dr.<br />
+                  West Vancouver, BC V7V 1L2<br />
+                  Canada
+                </p>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Global Presence</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between py-3 border-b border-gray-100">
-                  <span className="text-gray-600">North America</span>
-                  <span className="font-semibold text-gray-900">Canada, USA</span>
-                </div>
-                <div className="flex justify-between py-3 border-b border-gray-100">
-                  <span className="text-gray-600">Asia Pacific</span>
-                  <span className="font-semibold text-gray-900">Philippines, India</span>
-                </div>
-                <div className="flex justify-between py-3">
-                  <span className="text-gray-600">Latin America</span>
-                  <span className="font-semibold text-gray-900">Multiple Countries</span>
-                </div>
+            <div className="flex items-start space-x-4">
+              <Phone className="h-6 w-6 text-gray-600 mt-1" />
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                <p className="text-gray-600">+1 604-674-5992</p>
               </div>
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                <p className="text-sm text-gray-800">
-                  <strong>24/7 Support:</strong> Our global presence ensures round-the-clock 
-                  support for all your offshore talent and accounting needs.
-                </p>
+            </div>
+            <div className="flex items-start space-x-4">
+              <Mail className="h-6 w-6 text-gray-600 mt-1" />
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+                <p className="text-gray-600">nash.cisneros@globalhiring.ai</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-black">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Transform Your Operations?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Join the companies saving hundreds of thousands annually with our offshore solutions.
-          </p>
-          <button className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            Schedule a Consultation
-          </button>
+        <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">Global Presence</h3>
+          <div className="space-y-4">
+            <div className="flex justify-between py-3 border-b border-gray-100">
+              <span className="text-gray-600">North America</span>
+              <span className="font-semibold text-gray-900">Canada, USA</span>
+            </div>
+            <div className="flex justify-between py-3 border-b border-gray-100">
+              <span className="text-gray-600">Asia Pacific</span>
+              <span className="font-semibold text-gray-900">Philippines, India</span>
+            </div>
+            <div className="flex justify-between py-3">
+              <span className="text-gray-600">Latin America</span>
+              <span className="font-semibold text-gray-900">Multiple Countries</span>
+            </div>
+          </div>
+          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+            <p className="text-sm text-gray-800">
+              <strong>24/7 Support:</strong> Our global presence ensures round-the-clock
+              support for all your offshore talent and accounting needs.
+            </p>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
+      </section >
+
+  {/* CTA Section */ }
+  < section className = "py-20 bg-black" >
+    <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 className="text-3xl font-bold text-white mb-6">
+        Ready to Transform Your Operations?
+      </h2>
+      <p className="text-xl text-gray-300 mb-8">
+        Join the companies saving hundreds of thousands annually with our offshore solutions.
+      </p>
+      <button className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+        Schedule a Consultation
+      </button>
+    </div>
+      </section >
+    </div >
   );
 };
 

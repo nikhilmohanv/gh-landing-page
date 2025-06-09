@@ -103,7 +103,7 @@ const Services = () => {
                             Professional Accounting Services
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            20+ years of finance expertise from KPMG & PwC alumni. We've managed over $175M in funds
+                            20+ years of finance expertise from KPMG &amp; PwC alumni. We&apos;ve managed over $175M in funds
                             and helped grow companies to $100M+ valuations.
                         </p>
                     </div>
@@ -280,7 +280,7 @@ const Services = () => {
 
                         <div className="mt-8 p-6 bg-gray-50 rounded-lg">
                             <p className="text-gray-800 italic text-center">
-                                "This success isn't just about savings—it's about unlocking the potential of a global workforce."
+                                &quot;This success isn&apos;t just about savings—it&apos;s about unlocking the potential of a global workforce.&quot;
                             </p>
                         </div>
                     </div>

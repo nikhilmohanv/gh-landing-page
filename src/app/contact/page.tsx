@@ -119,7 +119,7 @@ const Contact = () => {
                             {isSubmitted && (
                                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-3">
                                     <CheckCircle className="h-5 w-5 text-green-600" />
-                                    <p className="text-green-800">Thank you! Your message has been sent successfully. We'll respond within 24 hours.</p>
+                                    <p className="text-green-800">Thank you! Your message has been sent successfully. We&apos;ll respond within 24 hours.</p>
                                 </div>
                             )}
 
