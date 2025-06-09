@@ -12,7 +12,7 @@ interface Message {
   isStreaming?: boolean;
 }
 
-const ChatbotDemo = () => {
+const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -233,8 +233,8 @@ What interests you most?`;
                   )}
                 </div>
                 <div className={`px-4 py-3 rounded-2xl ${message.sender === 'user'
-                    ? 'bg-black text-white rounded-br-md'
-                    : 'bg-white text-gray-800 border border-gray-200 rounded-bl-md'
+                  ? 'bg-black text-white rounded-br-md'
+                  : 'bg-white text-gray-800 border border-gray-200 rounded-bl-md'
                   }`}>
                   {message.sender === 'bot' ? (
                     <div className="prose prose-sm max-w-none prose-headings:text-gray-900 prose-headings:font-semibold prose-h2:text-lg prose-h2:mb-3 prose-h2:mt-0 prose-h3:text-base prose-h3:mb-2 prose-h3:mt-3 prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-2 prose-ul:mb-2 prose-li:text-gray-700 prose-strong:text-gray-900">
@@ -250,23 +250,6 @@ What interests you most?`;
               </div>
             </div>
           ))}
-
-          {/* Loading Animation - Only show when waiting for bot response */}
-          {isLoading && (
-            <div className="flex justify-start">
-              <div className="flex items-start space-x-3 max-w-xs lg:max-w-md">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gray-300 flex items-center justify-center">
-                  <Bot className="h-4 w-4 text-gray-600" />
-                </div>
-                <div className="px-4 py-3 rounded-2xl bg-white border border-gray-200 rounded-bl-md">
-                  <div className="flex items-center space-x-2">
-                    <Loader2 className="h-4 w-4 text-gray-500 animate-spin" />
-                    <span className="text-sm text-gray-500">AI is thinking...</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
           <div ref={messagesEndRef} />
         </div>
       </div>
@@ -307,4 +290,4 @@ What interests you most?`;
   );
 };
 
-export default ChatbotDemo;
+export default Chatbot;

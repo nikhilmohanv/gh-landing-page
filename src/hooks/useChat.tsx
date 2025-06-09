@@ -1,5 +1,3 @@
-import { getChatResponseStream, getChatResponse } from '@/app/api/chat';
-
 export const useChat = () => {
   const sendMessageStream = async function* (message: string, conversationHistory: Array<{role: string, content: string}>) {
     try {
