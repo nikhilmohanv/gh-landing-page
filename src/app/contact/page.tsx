@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Globe } from 'lucide-react';
+import { MapPin, Phone, Mail, Send, CheckCircle, Globe } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
