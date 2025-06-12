@@ -24,9 +24,9 @@ const Navigation = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2 group">
-                        <div className="p-2 bg-black rounded-lg group-hover:bg-gray-800 transition-colors">
+                        {/* <div className="p-2 bg-black rounded-lg group-hover:bg-gray-800 transition-colors">
                             <Globe className="h-6 w-6 text-white" />
-                        </div>
+                        </div> */}
                         <span className="text-xl font-bold text-gray-900">Global Hiring</span>
                     </Link>
 
