@@ -29,7 +29,7 @@ import { CheckCircle, DollarSign, Shield, Users } from "lucide-react";
   
   export default function FeaturesSection() {
     return (
-        <section className="py-20 bg-white dark:bg-gray-900">
+        <section className="py-20 bg-white dark:bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
@@ -44,7 +44,7 @@ import { CheckCircle, DollarSign, Shield, Users } from "lucide-react";
                 <div className="grid md:grid-cols-3 gap-8 mb-16">
                     {features.map((feature, index) => (
                         <div key={index} className="text-center group">
-                            <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-2xl mb-6 group-hover:bg-gray-200 dark:group-hover:bg-gray-700 transition-colors">
+                            <div className="inline-flex items-center justify-center w-16 h-16 bg-gray-100 dark:bg-gray-900 rounded-2xl mb-6 group-hover:bg-gray-200 dark:group-hover:bg-gray-800 transition-colors">
                                 <feature.icon className="h-8 w-8 text-gray-700 dark:text-gray-300" />
                             </div>
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{feature.title}</h3>
@@ -54,7 +54,7 @@ import { CheckCircle, DollarSign, Shield, Users } from "lucide-react";
                 </div>
 
                 {/* Benefits Grid */}
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-100 dark:border-gray-700">
+                <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-100 dark:border-gray-800">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div>
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
@@ -70,7 +70,7 @@ import { CheckCircle, DollarSign, Shield, Users } from "lucide-react";
                             </div>
                         </div>
                         <div className="text-center">
-                            <div className="bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-700">
+                            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
                                 <div className="text-4xl font-bold text-black dark:text-white mb-2">$4B</div>
                                 <div className="text-gray-600 dark:text-gray-400 mb-4">Company Success Story</div>
                                 <div className="text-2xl font-bold text-green-600 mb-2">$200K+</div>

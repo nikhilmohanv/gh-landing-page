@@ -10,7 +10,7 @@ const stats = [
 
 export default function HeroSection() {
     return (
-        <section className="bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20">
+        <section className="bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-black dark:via-gray-900 dark:to-black py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-4xl mx-auto mb-16">
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
@@ -35,7 +35,7 @@ export default function HeroSection() {
                 {/* Stats */}
                 <div className="grid md:grid-cols-4 gap-8 mb-16">
                     {stats.map((stat, index) => (
-                        <div key={index} className="text-center bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-700">
+                        <div key={index} className="text-center bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-800">
                             <div className="text-3xl font-bold text-black dark:text-white mb-2">{stat.number}</div>
                             <div className="text-gray-600 dark:text-gray-400 font-medium">{stat.label}</div>
                         </div>
@@ -43,7 +43,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* AI Assistant CTA */}
-                <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 max-w-3xl mx-auto border border-gray-100 dark:border-gray-700">
+                <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 max-w-3xl mx-auto border border-gray-100 dark:border-gray-800">
                     <div className="text-center">
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-black dark:bg-white rounded-2xl mb-6">
                             <MessageCircle className="h-8 w-8 text-white dark:text-black" />
