@@ -54,7 +54,7 @@ import { CheckCircle, DollarSign, Shield, Users } from "lucide-react";
                 </div>
 
                 {/* Benefits Grid */}
-                <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8 md:p-12 border border-gray-100 dark:border-gray-800">
+                <div className="bg-gray-50 dark:bg-black rounded-2xl p-8 md:p-12 border border-gray-100 dark:border-white">
                     <div className="grid md:grid-cols-2 gap-8 items-center">
                         <div>
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
@@ -63,14 +63,14 @@ import { CheckCircle, DollarSign, Shield, Users } from "lucide-react";
                             <div className="space-y-4">
                                 {benefits.map((benefit, index) => (
                                     <div key={index} className="flex items-start space-x-3">
-                                        <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700 dark:text-gray-300">{benefit}</span>
+                                        <CheckCircle className="h-6 w-6 text-white flex-shrink-0 mt-0.5" />
+                                        <span className="text-white dark:text-gray-300">{benefit}</span>
                                     </div>
                                 ))}
                             </div>
                         </div>
                         <div className="text-center">
-                            <div className="bg-white dark:bg-black rounded-xl p-8 shadow-lg border border-gray-100 dark:border-gray-800">
+                            <div className="bg-white dark:bg-black rounded-xl p-8 ">
                                 <div className="text-4xl font-bold text-black dark:text-white mb-2">$4B</div>
                                 <div className="text-gray-600 dark:text-gray-400 mb-4">Company Success Story</div>
                                 <div className="text-2xl font-bold text-green-600 mb-2">$200K+</div>

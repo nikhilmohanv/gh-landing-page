@@ -43,7 +43,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* AI Assistant CTA */}
-                <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 max-w-3xl mx-auto border border-gray-100 dark:border-gray-800">
+                <div className="bg-white dark:bg-black rounded-2xl shadow-xl p-8 max-w-3xl mx-auto border border-black dark:border-white">
                     <div className="text-center">
                         <div className="inline-flex items-center justify-center w-16 h-16 bg-black dark:bg-white rounded-2xl mb-6">
                             <MessageCircle className="h-8 w-8 text-white dark:text-black" />
