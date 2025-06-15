@@ -5,7 +5,7 @@ import CtaSection from '@/components/home/cta';
 
 const Home = () => {
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-white dark:bg-gray-900">
       <HeroSection />
       <FeaturesSection />
       <ServicesSection />

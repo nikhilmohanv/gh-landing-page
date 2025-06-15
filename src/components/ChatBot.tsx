@@ -217,30 +217,30 @@ What interests you most?`;
   };
 
   return (
-    <div className="w-full h-[calc(100vh-4rem)] bg-white flex flex-col">
+    <div className="w-full h-[calc(100vh-4rem)] bg-white dark:bg-gray-900 flex flex-col">
       {/* Chat Messages */}
-      <div className="flex-1 overflow-y-auto bg-gray-50">
+      <div className="flex-1 overflow-y-auto bg-gray-50 dark:bg-gray-800">
         <div className="max-w-4xl mx-auto p-6 space-y-4">
           {messages.map((message) => (
             <div key={message.id} className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
               <div className={`flex items-start space-x-3 max-w-xs lg:max-w-2xl ${message.sender === 'user' ? 'flex-row-reverse space-x-reverse' : ''}`}>
-                <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${message.sender === 'user' ? 'bg-black' : 'bg-gray-300'
+                <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${message.sender === 'user' ? 'bg-black dark:bg-white' : 'bg-gray-300 dark:bg-gray-600'
                   }`}>
                   {message.sender === 'user' ? (
-                    <User className="h-4 w-4 text-white" />
+                    <User className="h-4 w-4 text-white dark:text-black" />
                   ) : (
-                    <Bot className="h-4 w-4 text-gray-600" />
+                    <Bot className="h-4 w-4 text-gray-600 dark:text-gray-300" />
                   )}
                 </div>
                 <div className={`px-4 py-3 rounded-2xl ${message.sender === 'user'
-                  ? 'bg-black text-white rounded-br-md'
-                  : 'bg-white text-gray-800 border border-gray-200 rounded-bl-md'
+                  ? 'bg-black dark:bg-white text-white dark:text-black rounded-br-md'
+                  : 'bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-100 border border-gray-200 dark:border-gray-600 rounded-bl-md'
                   }`}>
                   {message.sender === 'bot' ? (
-                    <div className="prose prose-sm max-w-none prose-headings:text-gray-900 prose-headings:font-semibold prose-h2:text-lg prose-h2:mb-3 prose-h2:mt-0 prose-h3:text-base prose-h3:mb-2 prose-h3:mt-3 prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-2 prose-ul:mb-2 prose-li:text-gray-700 prose-strong:text-gray-900">
+                    <div className="prose prose-sm max-w-none prose-headings:text-gray-900 dark:prose-headings:text-gray-100 prose-headings:font-semibold prose-h2:text-lg prose-h2:mb-3 prose-h2:mt-0 prose-h3:text-base prose-h3:mb-2 prose-h3:mt-3 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-2 prose-ul:mb-2 prose-li:text-gray-700 dark:prose-li:text-gray-300 prose-strong:text-gray-900 dark:prose-strong:text-gray-100">
                       <ReactMarkdown>{message.text}</ReactMarkdown>
                       {message.isStreaming && (
-                        <span className="inline-block w-2 h-4 bg-gray-400 ml-1 animate-pulse"></span>
+                        <span className="inline-block w-2 h-4 bg-gray-400 dark:bg-gray-500 ml-1 animate-pulse"></span>
                       )}
                     </div>
                   ) : (
@@ -255,13 +255,13 @@ What interests you most?`;
       </div>
 
       {/* Chat Input */}
-      <div className="border-t border-gray-200 bg-white">
+      <div className="border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
         <div className="max-w-4xl mx-auto p-4">
           <div className="flex items-center space-x-3">
             <input
               type="text"
               placeholder="Ask about our offshore accounting and staffing services..."
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500"
+              className="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-full focus:outline-none focus:ring-2 focus:ring-gray-500 dark:focus:ring-gray-400 focus:border-gray-500 dark:focus:border-gray-400 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               onKeyPress={handleKeyPress}
@@ -270,7 +270,7 @@ What interests you most?`;
             <button
               onClick={sendMessage}
               disabled={isLoading || !inputValue.trim()}
-              className="p-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="p-2 bg-black dark:bg-white text-white dark:text-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <Loader2 className="h-5 w-5 animate-spin" />
@@ -280,7 +280,7 @@ What interests you most?`;
             </button>
           </div>
           <div className="mt-3 text-center">
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-gray-500 dark:text-gray-400">
               Ask about accounting plans, staffing solutions, cost savings, or our hiring process
             </p>
           </div>

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Globe, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import ThemeToggle from './ThemeToggle';
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,15 +20,12 @@ const Navigation = () => {
     const isActive = (path: string) => pathname === path;
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 shadow-sm z-50">
+        <nav className="fixed top-0 left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2 group">
-                        {/* <div className="p-2 bg-black rounded-lg group-hover:bg-gray-800 transition-colors">
-                            <Globe className="h-6 w-6 text-white" />
-                        </div> */}
-                        <span className="text-xl font-bold text-gray-900">Global Hiring</span>
+                        <span className="text-xl font-bold text-gray-900 dark:text-white">Global Hiring</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -37,23 +35,25 @@ const Navigation = () => {
                                 key={item.path}
                                 href={item.path}
                                 className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${isActive(item.path)
-                                        ? 'text-black bg-gray-100'
-                                        : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                                        ? 'text-black dark:text-white bg-gray-100 dark:bg-gray-800'
+                                        : 'text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
                                     }`}
                             >
                                 {item.label}
                             </Link>
                         ))}
-                        <button className="bg-black text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors">
+                        <ThemeToggle />
+                        <button className="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors">
                             Start Hiring
                         </button>
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden">
+                    <div className="md:hidden flex items-center space-x-2">
+                        <ThemeToggle />
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="p-2 rounded-md text-gray-700 hover:text-black hover:bg-gray-50 transition-colors"
+                            className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                         >
                             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                         </button>
@@ -62,7 +62,7 @@ const Navigation = () => {
 
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
-                    <div className="md:hidden border-t border-gray-200 py-4">
+                    <div className="md:hidden border-t border-gray-200 dark:border-gray-700 py-4">
                         <div className="flex flex-col space-y-2">
                             {navItems.map((item) => (
                                 <Link
@@ -70,14 +70,14 @@ const Navigation = () => {
                                     href={item.path}
                                     onClick={() => setIsMenuOpen(false)}
                                     className={`px-3 py-2 text-sm font-medium transition-colors rounded-md ${isActive(item.path)
-                                            ? 'text-black bg-gray-100'
-                                            : 'text-gray-700 hover:text-black hover:bg-gray-50'
+                                            ? 'text-black dark:text-white bg-gray-100 dark:bg-gray-800'
+                                            : 'text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
                                         }`}
                                 >
                                     {item.label}
                                 </Link>
                             ))}
-                            <button className="bg-black text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors mt-4">
+                            <button className="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-lg font-medium hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors mt-4">
                                 Start Hiring
                             </button>
                         </div>
