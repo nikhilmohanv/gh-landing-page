@@ -10,7 +10,7 @@ const stats = [
 
 export default function HeroSection() {
     return (
-        <section className="bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-black dark:via-gray-900 dark:to-black py-20">
+        <section className="bg-gray-50 dark:bg-black py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-4xl mx-auto mb-16">
                     <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
