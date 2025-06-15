@@ -35,9 +35,9 @@ export default function HeroSection() {
                 {/* Stats */}
                 <div className="grid md:grid-cols-4 gap-8 mb-16">
                     {stats.map((stat, index) => (
-                        <div key={index} className="text-center bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-gray-800">
+                        <div key={index} className="text-center bg-white dark:bg-black rounded-2xl p-6 shadow-lg border border-gray-100 dark:border-white">
                             <div className="text-3xl font-bold text-black dark:text-white mb-2">{stat.number}</div>
-                            <div className="text-gray-600 dark:text-gray-400 font-medium">{stat.label}</div>
+                            <div className="text-gray-600 dark:text-gray-300 font-medium">{stat.label}</div>
                         </div>
                     ))}
                 </div>
