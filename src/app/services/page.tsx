@@ -9,8 +9,7 @@ const Services = () => {
             features: [
                 'Monthly Accounting',
                 'Monthly Payroll & Filings',
-                'Monthly Sales Tax Filings',
-                'Monthly Financial Statements'
+                'Monthly Sales Tax Filings'
             ],
             popular: false
         },
